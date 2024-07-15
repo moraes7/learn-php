@@ -29,17 +29,17 @@
                     return $this->pointer;
                 }
 
-                public function next() {
+                public function next() : void {
                     //echo "Next";
                     $this->pointer++;
                 }
 
-                public function rewind() {
+                public function rewind() : void {
                     //echo "Rewind";
                     $this->pointer = 0;
                 }
 
-                public function valid() {
+                public function valid(): bool {
                     //echo "Valid";
                     return isset($this->array[$this->pointer]);
                 }
